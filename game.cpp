@@ -79,10 +79,6 @@ string Staff::getDescription() const
 };
 int Staff::getAttack() const
 {
-  if (character->getDescription() == "Wizard")
-  {
-    return character->getAttack() + 60;
-  }
   return character->getAttack() + 20;
 };
 int Staff::getSpeed() const
@@ -100,10 +96,6 @@ string Sword::getDescription() const
 };
 int Sword::getAttack() const
 {
-  if (character->getDescription() == "Knight")
-  {
-    return character->getAttack() + 70;
-  }
   return character->getAttack() + 30;
 };
 int Sword::getSpeed() const
@@ -121,10 +113,6 @@ string Bow::getDescription() const
 };
 int Bow::getAttack() const
 {
-  if (character->getDescription() == "Archer")
-  {
-    return character->getAttack() + 65;
-  }
   return character->getAttack() + 25;
 };
 int Bow::getSpeed() const
